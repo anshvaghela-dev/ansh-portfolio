@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansh Vaghela Resume</title>
+  <style>
+    :root {
+      --text: #171411;
+      --muted: #5f564c;
+      --line: #ddd3c7;
+      --accent: #8f5920;
+      --paper: #fffdfa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: #f4efe8;
+      line-height: 1.36;
+    }
+
+    .page {
+      width: min(900px, calc(100vw - 32px));
+      margin: 24px auto;
+      padding: 30px 32px;
+      background: var(--paper);
+      border: 1px solid #efe5d8;
+      box-shadow: 0 12px 40px rgba(45, 29, 14, 0.08);
+    }
+
+    header {
+      display: grid;
+      gap: 8px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    .role {
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    main {
+      display: grid;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    section {
+      display: grid;
+      gap: 8px;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skills span {
+      padding: 5px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fcf8f3;
+      font-size: 0.82rem;
+    }
+
+    .entry {
+      display: grid;
+      gap: 4px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+
+    .entry:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .entry-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .entry-meta {
+      color: var(--muted);
+      font-size: 0.84rem;
+      white-space: nowrap;
+    }
+
+    .subhead {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    li + li {
+      margin-top: 2px;
+    }
+
+    .projects a,
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>Ansh Vaghela</h1>
+        <div class="role">Frontend Developer</div>
+      </div>
+      <div class="contact">
+        <span>Email: anshwebdev1@gmail.com</span>
+        <span>LinkedIn: linkedin.com/in/ansh4o</span>
+        <span>GitHub: github.com/anshvaghela-dev</span>
+        <span>Location: India</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+          Frontend Developer with internship and training experience in React and modern web interfaces.
+          Skilled in building responsive websites, portfolio pages and business-focused landing pages with
+          strong attention to presentation, usability and clean UI structure.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Skills</h2>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Bootstrap</span>
+          <span>Responsive Design</span>
+          <span>UI Layout</span>
+          <span>Landing Pages</span>
+          <span>Portfolio Design</span>
+          <span>GitHub</span>
+          <span>Business Communication</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">React Developer (Training)</div>
+            <div class="entry-meta">Sep 2024 - Present</div>
+          </div>
+          <div class="subhead">Infolabz IT Services Pvt. Ltd., Ahmedabad</div>
+          <ul>
+            <li>Built and practiced frontend interfaces using React, JavaScript, HTML and CSS.</li>
+            <li>Worked on responsive layouts, component-based UI structure and modern web presentation.</li>
+            <li>Strengthened practical development workflow through hands-on internship and training exposure.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">React JS Intern</div>
+            <div class="entry-meta">6 Months</div>
+          </div>
+          <div class="subhead">Orlank</div>
+          <ul>
+            <li>Contributed to React-based frontend work with focus on interface building and code practice.</li>
+            <li>Improved understanding of reusable UI structure, layout consistency and user-facing design.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="projects">
+        <h2>Selected Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Nest Mart Grocery Store</div>
+            <div class="entry-meta">React | JavaScript | Vercel</div>
+          </div>
+          <ul>
+            <li>Built a live grocery storefront with responsive product-first browsing and modern retail styling.</li>
+            <li>Focused on clear visual hierarchy, polished layout and practical frontend structure.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Smart Quiz App</div>
+            <div class="entry-meta">JavaScript</div>
+          </div>
+          <ul>
+            <li>Created an interactive quiz interface with smooth question flow and lightweight user interaction logic.</li>
+            <li>Designed for clarity, engagement and simple navigation across the quiz experience.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Text to Speech Converter</div>
+            <div class="entry-meta">HTML | Web Speech</div>
+          </div>
+          <ul>
+            <li>Developed a browser-based speech tool exploring text-to-speech interaction through a clean interface.</li>
+            <li>Focused on accessibility, usability and practical web feature implementation.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Master of Computer Application</div>
+            <div class="entry-meta">Aug 2024 - Present</div>
+          </div>
+          <div class="subhead">Dr. Babasaheb Ambedkar Open University</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Bachelor of Computer Application</div>
+            <div class="entry-meta">Sep 2021 - May 2024</div>
+          </div>
+          <div class="subhead">Gujarat University</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Update the sitemap URL with your final deployed domain if needed.
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://anshvaghela-dev.github.io/ansh-portfolio/sitemap.xml

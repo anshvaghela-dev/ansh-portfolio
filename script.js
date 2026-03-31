@@ -18,7 +18,7 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-window.addEventListener("load", () => {
+function resetScrollPosition() {
   if (window.location.hash) {
     history.replaceState(null, "", window.location.pathname + window.location.search);
   }
@@ -28,6 +28,13 @@ window.addEventListener("load", () => {
     left: 0,
     behavior: "auto"
   });
+}
+
+window.addEventListener("DOMContentLoaded", resetScrollPosition);
+window.addEventListener("load", resetScrollPosition);
+window.addEventListener("pageshow", resetScrollPosition);
+window.addEventListener("beforeunload", () => {
+  window.scrollTo(0, 0);
 });
 
 function typeRole() {

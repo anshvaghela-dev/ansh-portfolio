@@ -13,8 +13,7 @@
     "tags": ["React", "JavaScript", "Vercel"],
     "liveUrl": "https://grocery-react-sigma.vercel.app",
     "githubUrl": "https://github.com/anshvaghela-dev/grocery-react",
-    "featured": true,
-    "gallery": false
+    "featured": true
   },
   {
     "title": "Swizza's World",
@@ -30,8 +29,7 @@
     "tags": ["HTML", "CSS", "JavaScript"],
     "liveUrl": "https://swizaas-world.netlify.app/",
     "githubUrl": "https://github.com/anshvaghela-dev/Swizaa-s-world",
-    "featured": true,
-    "gallery": false
+    "featured": true
   },
   {
     "title": "Smart Quiz App",
@@ -47,8 +45,7 @@
     "tags": ["JavaScript", "Quiz App"],
     "liveUrl": "https://flourishing-selkie-ea6b11.netlify.app/",
     "githubUrl": "https://github.com/anshvaghela-dev/SmartQuiz",
-    "featured": false,
-    "gallery": true
+    "featured": false
   },
   {
     "title": "Text to Speech Converter",
@@ -60,7 +57,6 @@
     "tags": ["HTML", "Web Speech"],
     "liveUrl": "https://speech-synthesizer-app.onrender.com/",
     "githubUrl": "https://github.com/anshvaghela-dev/speech-synthesizer-web",
-    "featured": false,
-    "gallery": true
+    "featured": false
   }
 ]

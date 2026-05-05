@@ -212,42 +212,21 @@ typeRole();
 
 /* ── Load projects from projects.json ── */
 (function loadProjects() {
-  const featuredGrid = document.getElementById("projects-grid");
-  const galleryGrid  = document.getElementById("gallery-grid");
-  if (!featuredGrid && !galleryGrid) return;
+  const grid = document.getElementById("projects-grid");
+  if (!grid) return;
 
   fetch("projects.json")
     .then((res) => {
       if (!res.ok) throw new Error("fetch failed");
       return res.json();
     })
-    .then(renderProjects)
+    .then((projects) => {
+      grid.innerHTML = projects.map((p, i) => buildProjectCard(p, i)).join("");
+    })
     .catch(() => {
       // Silently skip on file:// — works on GitHub Pages
     });
 })();
-
-function renderProjects(projects) {
-  const featuredGrid = document.getElementById("projects-grid");
-  const galleryGrid  = document.getElementById("gallery-grid");
-
-  const featured = projects.filter((p) => p.featured === true);
-  const gallery  = projects.filter((p) => p.gallery === true);
-
-  if (featuredGrid) {
-    featuredGrid.innerHTML = featured.map((p, i) => buildProjectCard(p, i)).join("");
-  }
-
-  if (galleryGrid) {
-    if (gallery.length === 0) {
-      // Hide the gallery section if nothing to show
-      const section = galleryGrid.closest("section");
-      if (section) section.style.display = "none";
-    } else {
-      galleryGrid.innerHTML = gallery.map((p) => buildGalleryTile(p)).join("");
-    }
-  }
-}
 
 function buildProjectCard(p, index) {
   const isFeatured = p.featured === true;
@@ -286,35 +265,6 @@ function buildProjectCard(p, index) {
       <p>${p.description}</p>
       ${highlightsHTML}
       <div class="project-links">${liveLink}${githubLink}</div>
-    </article>
-  `;
-}
-
-function buildGalleryTile(p) {
-  const tagsHTML = p.tags && p.tags.length
-    ? `<div class="gallery-tile-tags">${p.tags.map((t) => `<span>${t}</span>`).join("")}</div>`
-    : "";
-
-  const liveLink = p.liveUrl
-    ? `<a href="${p.liveUrl}" target="_blank" rel="noreferrer" aria-label="Live demo of ${p.title}">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>`
-    : "";
-
-  const githubLink = p.githubUrl
-    ? `<a href="${p.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub repo for ${p.title}">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      </a>`
-    : "";
-
-  return `
-    <article class="gallery-tile">
-      <div class="gallery-tile-top">
-        <h3>${p.title}</h3>
-        <div class="gallery-tile-links">${liveLink}${githubLink}</div>
-      </div>
-      <p>${p.description}</p>
-      ${tagsHTML}
     </article>
   `;
 }

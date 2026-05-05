@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Nest Mart Grocery Store",
+    "label": "Featured Project",
+    "platform": "React + Vercel",
+    "image": "assets/nest-mart-grocery-store.png",
+    "description": "A live grocery storefront inspired by a modern retail experience, built to deliver clean browsing, polished product presentation and a responsive interface for everyday shopping journeys.",
+    "highlights": [
+      "Live deployed frontend on Vercel",
+      "Responsive shopping-style layout",
+      "Modern UI for product-first browsing"
+    ],
+    "tags": ["React", "JavaScript", "Vercel"],
+    "liveUrl": "https://grocery-react-sigma.vercel.app",
+    "githubUrl": "https://github.com/anshvaghela-dev/grocery-react",
+    "featured": true
+  },
+  {
+    "title": "Swizza's World",
+    "label": "Creative Web Project",
+    "platform": "HTML + CSS + JS",
+    "image": "assets/swizzas-world.png",
+    "description": "A personal poetry platform built to give emotions a home on the web. Features a curated collection of original poems across themes of nature, love and hope — presented through a clean, atmospheric reading experience.",
+    "highlights": [
+      "Multi-page poetry browsing experience",
+      "Emotion-driven UI with a minimal aesthetic",
+      "Deployed live on Netlify"
+    ],
+    "tags": ["HTML", "CSS", "JavaScript", "Netlify"],
+    "liveUrl": "https://swizaas-world.netlify.app/",
+    "githubUrl": "https://github.com/anshvaghela-dev/Swizaa-s-world",
+    "featured": false
+  },
+  {
+    "title": "Smart Quiz App",
+    "label": "Frontend Project",
+    "platform": "JavaScript",
+    "image": "assets/smart-quiz-app.png",
+    "description": "An interactive quiz application built with JavaScript, focused on smooth user flow, clear question progression and a lightweight interface that keeps the experience engaging.",
+    "highlights": [
+      "Question-driven interaction flow",
+      "JavaScript-based user logic",
+      "Clean, simple web interface"
+    ],
+    "tags": ["JavaScript", "Quiz App", "Interactive UI"],
+    "liveUrl": "https://flourishing-selkie-ea6b11.netlify.app/",
+    "githubUrl": "https://github.com/anshvaghela-dev/SmartQuiz",
+    "featured": false
+  },
+  {
+    "title": "Text to Speech Converter",
+    "label": "Web Project",
+    "platform": "HTML",
+    "image": "assets/text-to-speech-converter.png",
+    "description": "A browser-based speech synthesizer concept that explores voice interaction on the web through a simple, accessible interface and practical frontend implementation.",
+    "highlights": [],
+    "tags": ["HTML", "Web Speech", "Browser App"],
+    "liveUrl": "https://speech-synthesizer-app.onrender.com/",
+    "githubUrl": "https://github.com/anshvaghela-dev/speech-synthesizer-web",
+    "featured": false
+  }
+]

@@ -209,3 +209,66 @@ revealItems.forEach((item) => {
 
 /* ── Init ── */
 typeRole();
+
+/* ── Load projects from projects.json ── */
+(function loadProjects() {
+  const grid = document.getElementById("projects-grid");
+  if (!grid) return;
+
+  fetch("projects.json")
+    .then((res) => {
+      if (!res.ok) throw new Error("fetch failed");
+      return res.json();
+    })
+    .then((projects) => {
+      grid.innerHTML = projects.map((p, i) => buildProjectCard(p, i)).join("");
+    })
+    .catch(() => {
+      // Fetch fails on file:// protocol — silently skip (works fine on GitHub Pages)
+    });
+})();
+
+function buildProjectCard(p, index) {
+  const isFeatured = p.featured === true;
+
+  const highlightsHTML = p.highlights && p.highlights.length
+    ? `<ul>${p.highlights.map((h) => `<li>${h}</li>`).join("")}</ul>`
+    : "";
+
+  const tagsHTML = p.tags && p.tags.length
+    ? `<div class="project-meta">${p.tags.map((t) => `<span>${t}</span>`).join("")}</div>`
+    : "";
+
+  const liveLink = p.liveUrl
+    ? `<a href="${p.liveUrl}" target="_blank" rel="noreferrer">Live Demo</a>`
+    : "";
+
+  const githubLink = p.githubUrl
+    ? `<a href="${p.githubUrl}" target="_blank" rel="noreferrer">GitHub</a>`
+    : "";
+
+  const imageHTML = p.image
+    ? `<img src="${p.image}" alt="${p.title} project preview" loading="${index === 0 ? "eager" : "lazy"}" onerror="this.parentElement.classList.add('no-image')">`
+    : "";
+
+  return `
+    <article class="project-card${isFeatured ? " feature-card" : ""}">
+      <div class="project-preview${!p.image ? " no-image" : ""}">
+        ${imageHTML}
+        ${!p.image ? `<span class="project-preview-label">${p.title}</span>` : ""}
+      </div>
+      <div class="project-topline">
+        <span>${p.label || "Project"}</span>
+        <span>${p.platform || ""}</span>
+      </div>
+      <h3>${p.title}</h3>
+      ${tagsHTML}
+      <p>${p.description}</p>
+      ${highlightsHTML}
+      <div class="project-links">
+        ${liveLink}
+        ${githubLink}
+      </div>
+    </article>
+  `;
+}

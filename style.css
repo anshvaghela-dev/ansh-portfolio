@@ -61,7 +61,7 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(108, 99, 255, 0.08), transparent 28%),
@@ -403,7 +403,7 @@ section {
 .hero-copy h1,
 .contact-card h2,
 .resume-card h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Syne", sans-serif;
   line-height: 1.05;
   letter-spacing: -0.03em;
 }
@@ -654,7 +654,7 @@ section {
 .section-heading h2 {
   margin-top: 10px;
   max-width: 18ch;
-  font-family: "Manrope", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   font-weight: 800;
   line-height: 1.15;
@@ -1033,7 +1033,7 @@ section {
 
 .resume-card h2 {
   margin: 10px 0 16px;
-  font-family: "Playfair Display", serif;
+  font-family: "Syne", sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.03em;

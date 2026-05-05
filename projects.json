@@ -20,7 +20,7 @@
     "title": "Swizza's World",
     "label": "Creative Project",
     "platform": "HTML + CSS + JS",
-    "image": "",
+    "image": "assets/swizaas-world.png",
     "description": "A personal poetry platform presenting original poems across themes of nature, love and hope with a minimal reading experience.",
     "highlights": [
       "Multi-page poetry site",

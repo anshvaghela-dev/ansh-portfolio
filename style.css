@@ -403,15 +403,15 @@ section {
 .hero-copy h1,
 .contact-card h2,
 .resume-card h2 {
-  font-family: "Syne", sans-serif;
-  line-height: 1.05;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
 .hero-copy h1 {
-  max-width: 13ch;
+  max-width: 16ch;
   margin-top: 24px;
-  font-size: clamp(3.2rem, 7vw, 6.3rem);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
 }
 
 .hero-copy h1 span {
@@ -1033,9 +1033,9 @@ section {
 
 .resume-card h2 {
   margin: 10px 0 16px;
-  font-family: "Syne", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.05;
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
@@ -1409,7 +1409,7 @@ section {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.6rem, 13vw, 4rem);
+    font-size: clamp(2.2rem, 11vw, 3.4rem);
   }
 
   .section-heading h2,

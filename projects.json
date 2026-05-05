@@ -1,5 +1,6 @@
 [
   {
+    "slug": "nest-mart-grocery-store",
     "title": "Nest Mart Grocery Store",
     "label": "Featured Project",
     "platform": "React + Vercel",
@@ -13,9 +14,31 @@
     "tags": ["React", "JavaScript", "Vercel"],
     "liveUrl": "https://grocery-react-sigma.vercel.app",
     "githubUrl": "https://github.com/anshvaghela-dev/grocery-react",
-    "featured": true
+    "featured": true,
+    "details": {
+      "overview": "Nest Mart is a fully responsive grocery store frontend built with React. The goal was to create a modern, clean shopping experience that feels professional and easy to navigate — similar to real e-commerce platforms.",
+      "role": "Solo Frontend Developer",
+      "duration": "2 weeks",
+      "challenges": [
+        "Building a dynamic product listing system with React components",
+        "Making the layout fully responsive across all screen sizes",
+        "Deploying and configuring the app on Vercel with proper routing"
+      ],
+      "learnings": [
+        "Deepened understanding of React component architecture",
+        "Learned how to manage state for cart and product filtering",
+        "Gained experience with Vercel deployment and environment setup"
+      ],
+      "features": [
+        "Product browsing with category filters",
+        "Responsive grid layout for all devices",
+        "Clean modern UI inspired by real grocery platforms",
+        "Live deployment on Vercel"
+      ]
+    }
   },
   {
+    "slug": "swizzas-world",
     "title": "Swizza's World",
     "label": "Creative Project",
     "platform": "HTML + CSS + JS",
@@ -29,9 +52,32 @@
     "tags": ["HTML", "CSS", "JavaScript"],
     "liveUrl": "https://swizaas-world.netlify.app/",
     "githubUrl": "https://github.com/anshvaghela-dev/Swizaa-s-world",
-    "featured": true
+    "featured": true,
+    "details": {
+      "overview": "Swizza's World is a personal poetry website built to give original poems a beautiful home on the web. The design focuses on a calm, atmospheric reading experience with minimal distractions — letting the words speak for themselves.",
+      "role": "Solo Developer & Designer",
+      "duration": "1 week",
+      "challenges": [
+        "Designing a layout that feels emotional and atmospheric without being heavy",
+        "Building a multi-page site with smooth navigation using vanilla JS",
+        "Keeping the UI minimal while still feeling polished and intentional"
+      ],
+      "learnings": [
+        "Improved CSS layout and typography skills for content-focused design",
+        "Learned how to create mood through colour, spacing and font choices",
+        "Practiced building multi-page sites without any framework"
+      ],
+      "features": [
+        "Multi-page structure — Home, Poems, About, Contact",
+        "Original poetry collection with category tags",
+        "Minimal atmospheric design focused on reading",
+        "Mobile-friendly responsive layout",
+        "Deployed live on Netlify"
+      ]
+    }
   },
   {
+    "slug": "smart-quiz-app",
     "title": "Smart Quiz App",
     "label": "Frontend Project",
     "platform": "JavaScript",
@@ -45,9 +91,31 @@
     "tags": ["JavaScript", "Quiz App"],
     "liveUrl": "https://flourishing-selkie-ea6b11.netlify.app/",
     "githubUrl": "https://github.com/anshvaghela-dev/SmartQuiz",
-    "featured": false
+    "featured": false,
+    "details": {
+      "overview": "Smart Quiz App is an interactive browser-based quiz application built with vanilla JavaScript. It focuses on a smooth, engaging user experience with clear question progression and instant feedback.",
+      "role": "Solo Frontend Developer",
+      "duration": "3 days",
+      "challenges": [
+        "Managing quiz state and question progression with pure JavaScript",
+        "Handling score tracking and result display logic",
+        "Keeping the UI clean and distraction-free during the quiz flow"
+      ],
+      "learnings": [
+        "Strengthened vanilla JavaScript DOM manipulation skills",
+        "Learned how to structure interactive UI logic without a framework",
+        "Practiced building user flows with clear start, progress and end states"
+      ],
+      "features": [
+        "Multiple choice question format",
+        "Score tracking and result screen",
+        "Smooth question transition flow",
+        "Lightweight — no frameworks or libraries"
+      ]
+    }
   },
   {
+    "slug": "text-to-speech-converter",
     "title": "Text to Speech Converter",
     "label": "Web Project",
     "platform": "HTML",
@@ -57,6 +125,27 @@
     "tags": ["HTML", "Web Speech"],
     "liveUrl": "https://speech-synthesizer-app.onrender.com/",
     "githubUrl": "https://github.com/anshvaghela-dev/speech-synthesizer-web",
-    "featured": false
+    "featured": false,
+    "details": {
+      "overview": "Text to Speech Converter is a browser-based tool that uses the Web Speech API to convert typed text into spoken audio. It explores how native browser APIs can be used to build accessible, voice-driven web experiences.",
+      "role": "Solo Developer",
+      "duration": "2 days",
+      "challenges": [
+        "Understanding and implementing the Web Speech API correctly",
+        "Handling browser compatibility differences for speech synthesis",
+        "Building a clean UI that makes the tool intuitive to use"
+      ],
+      "learnings": [
+        "Learned how to work with native browser Web APIs",
+        "Understood the basics of accessibility and voice interaction on the web",
+        "Practiced building simple, focused single-purpose tools"
+      ],
+      "features": [
+        "Real-time text to speech conversion",
+        "Uses native Web Speech API — no external libraries",
+        "Simple, accessible interface",
+        "Works directly in the browser"
+      ]
+    }
   }
 ]

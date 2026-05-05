@@ -260,11 +260,15 @@ function buildProjectCard(p, index) {
         <span>${p.label || "Project"}</span>
         <span>${p.platform || ""}</span>
       </div>
-      <h3>${p.title}</h3>
+      <h3><a href="project-details.html?project=${p.slug}" class="project-title-link">${p.title}</a></h3>
       ${tagsHTML}
       <p>${p.description}</p>
       ${highlightsHTML}
-      <div class="project-links">${liveLink}${githubLink}</div>
+      <div class="project-links">
+        <a href="project-details.html?project=${p.slug}">View Details</a>
+        ${liveLink}
+        ${githubLink}
+      </div>
     </article>
   `;
 }

@@ -973,9 +973,19 @@ section {
   background: var(--accent);
 }
 
+/* Project title link */
+.project-title-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.project-title-link:hover {
+  color: var(--accent);
+}
+
 .project-links a,
-.project-link {
-  display: inline-flex;
+.project-link {  display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 38px;
